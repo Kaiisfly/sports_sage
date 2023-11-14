@@ -15,15 +15,11 @@ You'll need Python 3.7 or later installed on your computer. You'll also need the
 - Beautiful Soup
 - Pandas
 
-You can install these using pip:
-
-```bash
-pip install torch nltk beautifulsoup4 pandas
+You can install these using pip: pip install torch nltk beautifulsoup4 pandas
 
 ### Running the Chatbot:
 
 The chatbot can be run from the command line. Navigate to the directory containing the chatbot files and run the following command:
-python chat.py
 
 ## Overview
 
@@ -40,18 +36,3 @@ The `chat.py` script is the main script that runs the chatbot. Here's a brief ov
 
 The chatbot includes a web scraping feature that uses Beautiful Soup to parse HTML and extract data from league tables. The HTML for the tables is stored in a Python dictionary, and the `extract_data` function takes a key from this dictionary, parses the HTML, and returns a Pandas DataFrame with the table data.
 
-Here's the code for this feature:
-
-```python
-from bs4 import BeautifulSoup
-import pandas as pd
-from table_html import u10_coed, u12_boys, u14_boys
-
-data_dict = {
-    'u10_coed': u10_coed,
-    'u12_boys': u12_boys,
-    'u14_boys': u14_boys,
-}
-
-def extract_data(data_key):
-    # Code here...
