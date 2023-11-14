@@ -1,30 +1,92 @@
-# Top Flight Basketball Academy Chatbot - *Work In Progress*
+#SportsSage Basketball Academy Chatbot
 
 ![Top Flight Basketball Academy Logo](tf_logo.png)
 
-Welcome to the Top Flight Basketball Academy Chatbot! This chatbot is designed to provide information and assist users with inquiries related to Top Flight Basketball Academy.
+Welcome to the SportsSage Basketball Academy Chatbot! This chatbot uses Natural Language Processing (NLP) to understand and respond to various user inputs. It also includes a web scraping feature to provide information about different basketball leagues.
 
-## Features
+Setup
+Prerequisites:
+You'll need Python 3.7 or later installed on your computer. You'll also need the following Python libraries:
 
-- **Greeting and Goodbye**: The chatbot can greet users and bid them farewell politely.
-- **Class Types**: Users can inquire about the different classes offered at Top Flight, including afterschool programs, weekend academy, the elite program, international camps, and private coaching.
-- **Payment Methods**: The chatbot provides information about the accepted payment methods, which at the momment only bank transfers are accepted.
-- **Unique Features**: The chatbot highlights the key features of Top Flight, such as expertise Coach Ike, a former D1 athlete and NCAA National Champion, personalized attention, realistic opportunities for advancement, and a global coaching network.
-- **Jokes**: For a touch of humor, the chatbot can share jokes upon request.
+PyTorch
+NLTK
+Beautiful Soup
+Pandas
+You can install these using pip:
 
-## Usage
+shell
+Copy
+pip install torch nltk beautifulsoup4 pandas
+Running the Chatbot:
+The chatbot can be run from the command line. Navigate to the directory containing the chatbot files and run the following command:
 
-To use the chatbot, simply initiate a conversation by greeting the bot. You can then ask questions or make inquiries about Top Flight Basketball Academy. The chatbot will provide informative and friendly responses.
+shell
+Copy
+python chat.py
+Overview
+The chat.py script is the main script that runs the chatbot. Here's a brief overview of how it works:
 
-Here's an example conversation:
+The script begins by importing the necessary modules and setting up the device for PyTorch computations.
+It then loads the trained model and the intents from a JSON file.
+The chatbot enters into a while loop, where it waits for user input. If the input is "quit", it breaks the loop and the chatbot stops.
+If the input matches one of the keys in the data dictionary, it will scrape
+the format should be good with .md
 
-<p><strong>User:</strong> Hi</p>
-<p><strong>Chatbot:</strong> Hello! Thank you for visiting Top Flight Basketball Academy. How can I help?</p>
-<p><strong>User:</strong> What classes do you offer?</p>
-<p><strong>Chatbot:</strong> We offer many classes here at Top Flight led by our amazing instructors. At the moment, the programs we offer are: Afterschool Programs, Weekend Academy, The Elite Program, International Camps, and Private Coaching.</p>
-<p><strong>User:</strong> How do I pay?</p>
-<p><strong>Chatbot:</strong> We only accept Bank transfers at the moment. Please transfer to: Bank Details</p>
-<p><strong>User:</strong> Tell me a joke!</p>
-<p><strong>Chatbot:</strong> Why did the hipster burn his mouth? He drank the coffee before it was cool.</p>
-<p><strong>User:</strong> Goodbye</p>
-<p><strong>Chatbot:</strong> See you later! Thanks for visiting the Top Flight Website.</p>
+GPT-4
+GPT-4
+
+Poe
+SportsSage Basketball Academy Chatbot
+Welcome to the SportsSage Basketball Academy Chatbot! This chatbot uses Natural Language Processing (NLP) to understand and respond to various user inputs. It also includes a web scraping feature to provide information about different basketball leagues.
+
+Setup
+Prerequisites:
+You'll need Python 3.7 or later installed on your computer. You'll also need the following Python libraries:
+
+PyTorch
+NLTK
+Beautiful Soup
+Pandas
+You can install these using pip:
+
+bash
+Copy
+pip install torch nltk beautifulsoup4 pandas
+Running the Chatbot:
+The chatbot can be run from the command line. Navigate to the directory containing the chatbot files and run the following command:
+
+bash
+Copy
+python chat.py
+Overview
+The chat.py script is the main script that runs the chatbot. Here's a brief overview of how it works:
+
+The script begins by importing the necessary modules and setting up the device for PyTorch computations.
+It then loads the trained model and the intents from a JSON file.
+The chatbot enters into a while loop, where it waits for user input. If the input is "quit", it breaks the loop and the chatbot stops.
+If the input matches one of the keys in the data dictionary, it will scrape the data and print the standings.
+If the input does not match, it tokenizes the input and transforms it into a bag-of-words tensor. This tensor is then fed into the model which produces an output. The output is a tag that corresponds to the type of user intent.
+The chatbot then selects a random response from the corresponding tag and prints it.
+Web Scraping Feature
+The chatbot includes a web scraping feature that uses Beautiful Soup to parse HTML and extract data from league tables. The HTML for the tables is stored in a Python dictionary, and the extract_data function takes a key from this dictionary, parses the HTML, and returns a Pandas DataFrame with the table data.
+
+Here's the code for this feature:
+
+python
+Copy
+from bs4 import BeautifulSoup
+import pandas as pd
+from table_html import u10_coed, u12_boys, u14_boys
+
+data_dict = {
+    'u10_coed': u10_coed,
+    'u12_boys': u12_boys,
+    'u14_boys': u14_boys,
+}
+
+def extract_data(data_key):
+    # Code here...
+Support
+If you encounter any issues or have questions, please email sportsSage.admin@gmail.com.
+
+Please enjoy using the SportsSage Basketball Academy Chatbot!
