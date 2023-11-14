@@ -1,0 +1,138 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "yo",
+        "Whats up",
+        "Sup",
+        "Whats Good",
+        "Up to"
+      ],
+      "responses": [
+        "Hello! Thank you for Visiting Top Flight Basketball Academy, How can I help?",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?",
+        "Hello! How can I be of assistance?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "See ya", "later"],
+      "responses": [
+        "See you later!, Thanks for visiting the Top Flight Website. ",
+        "Thank you for visiting! Have a nice day :) ",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!", "ty", "thx"],
+      "responses": ["Happy to help!", "Anytime! :)", "My pleasure!"]
+    },
+    {
+      "tag": "cost",
+      "patterns": ["How much?", "Cost?", "price?", "How much cost?", "Is it expensive?"],
+      "responses": [
+        "Here is the link to our price sheet: *link* "
+      ]
+    },
+    {
+      "tag": "class_types",
+      "patterns": [
+        "Which classes do you have?",
+        "What classes do you offer?",
+        "What classes?",
+        "What kind of classes do you offer?"
+      ],
+      "responses": [
+        "We offer many classes here at Top Flight led by our amazing instructors.\nAt the moment, the programs we offer are: After-school Programs, Weekend Academy, The Elite Program, International Camps, and Private Coaching."
+      ]
+    },
+    {
+      "tag": "payment_method",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Do you accept Visa?",
+        "Can I pay with Paypal?",
+        "Cash?",
+        "Credit card?",
+        "How do you pay?",
+        "How do i pay?",
+        "How pay",
+        "What payment options do you offer?"
+      ],
+      "responses": [
+        "We only accept Bank transfers at the moment, please transfer to: *Bank Details*"
+      ]
+    },
+    {
+      "tag": "overseas_trip_now",
+      "patterns": [
+        "What trips are top flight offering now?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "why_tf",
+      "patterns": [
+        "What is special about Top Flight?",
+        "Why should I join top flight?",
+        "What separates top flight from others?",
+        "Why should my son enroll in Top Flight?",
+        "Why should my daughter enroll in Top Flight?"
+      ],
+      "responses": [
+        "Top Flight is special because it offers:\n\n- Expertise from a former D1 athlete and NCAA National Champion.\n- Individualized attention and specifically designed training programs.\n- An optimal student-to-coach ratio.\n- Realistic opportunities to play basketball at the next level.\n- A worldwide coaching network and professional coaches licensed by leading governing bodies.\n\nTop Flight delivers a unique basketball training experience."
+      ]
+    },
+    {
+      "tag": "why_basketball",
+      "patterns": [
+        "Why should i play basketball?",
+        "Why should my child play basketball?"
+      ],
+      "responses": [
+        "Basketball is an ever-growing sport worldwide. *Insert fact here* *insert stat about hk basketball and/or how extracurricular activities help kids*"
+      ]
+    },
+    {
+      "tag": "nba",
+      "patterns": [
+        "Is there a path to the NBA?",
+        "Will my son get to the nba through this program?",
+        "Will this program make you NBA ready?",
+        "Can i get to the NBA?"
+      ],
+      "responses": [
+        "The NBA (National Basketball Association) is the highest-level of basketball in the world. *Insert stat of likelihood of getting to the league*"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "joke",
+        "joke please"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
