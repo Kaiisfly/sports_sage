@@ -36,3 +36,42 @@ The `chat.py` script is the main script that runs the chatbot. Here's a brief ov
 
 The chatbot includes a web scraping feature that uses Beautiful Soup to parse HTML and extract data from league tables. The HTML for the tables is stored in a Python dictionary, and the `extract_data` function takes a key from this dictionary, parses the HTML, and returns a Pandas DataFrame with the table data.
 
+## Example Interactions
+
+Here are a few examples of how the chatbot may respond to various user inputs. The responses are chosen randomly from a list of possible responses associated with each intent tag.
+
+**User:** "Hi"
+
+**Bot:** "Hello! Thank you for Visiting Top Flight Basketball Academy, How can I help?"
+
+**User:** "Bye"
+
+**Bot:** "See you later!, Thanks for visiting the Top Flight Website."
+
+**User:** "Thanks"
+
+**Bot:** "Happy to help!"
+
+**User:** "How much?"
+
+**Bot:** "Here is the link to our price sheet: [link](URL_HERE)"
+
+**User:** "Which classes do you have?"
+
+**Bot:** "We offer many classes here at Top Flight led by our amazing instructors. At the moment, the programs we offer are: After-school Programs, Weekend Academy, The Elite Program, International Camps, and Private Coaching."
+
+**User:** "Do you take credit cards?"
+
+**Bot:** "We only accept Bank transfers at the moment, please transfer to: Bank Details"
+
+**User:** "What is special about Top Flight?"
+
+**Bot:** "Top Flight is special because it offers:
+
+- Expertise from a former D1 athlete and NCAA National Champion.
+- Individualized attention and specifically designed training programs.
+- An optimal student-to-coach ratio.
+- Realistic opportunities to play basketball at the next level.
+- A worldwide coaching network and professional coaches licensed by leading governing bodies.
+
+Top Flight delivers a unique basketball training experience."
