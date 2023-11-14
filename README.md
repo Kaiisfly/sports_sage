@@ -75,3 +75,8 @@ Here are a few examples of how the chatbot may respond to various user inputs. T
 - A worldwide coaching network and professional coaches licensed by leading governing bodies.
 
 Top Flight delivers a unique basketball training experience."
+
+**User:** "u10_coed"
+
+**Bot:** 
+![Top Flight Basketball Academy Logo](table.png)
